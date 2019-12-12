@@ -28,11 +28,16 @@ Only 8bit GRAY/RGB PNG images are handled.
 The code is written in ANSI C, and should compile on any system with
 an ANSI C compiler.
 
-The libpng header and libraries are required on the system for
-compilation and execution. On Linux, just use your package manager
-to install it:
+The following libraries are required on the system for compilation
+and execution:
+
+- libpng
+- libfftw3
+
+On Linux, you can install these using the following command:
+
 ```
-sudo apt-get install libpng
+sudo apt-get install libpng-dev libfftw3-dev build-essential
 ```
 
 For more information, see http://www.libpng.org/pub/png/libpng.html
